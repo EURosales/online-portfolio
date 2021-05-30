@@ -1,0 +1,82 @@
+.about-me-container {
+	display: flex;
+	flex-wrap: wrap;
+	background: $beige-100;
+
+	.about-title-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 1.5em 0;
+		background: $beige-100;
+	}
+
+	.left-side {
+		padding: 1em;
+		background: $beige-100;
+		width: 25%;
+		display: flex;
+		flex-direction: column;
+
+		img {
+			margin: 0 auto;
+			width: 100%;
+			border-radius: 100%;
+			padding: 0.5em 1em;
+		}
+
+		.hobies-list-container {
+			margin-top: 1.5em;
+			padding: 0 2em;
+		}
+	}
+
+	.right-side {
+		padding: 2.5em;
+		background: rgb(255, 255, 255);
+		width: 75%;
+		border-radius: 60px 0 0 60px;
+		margin-bottom: 2em;
+	}
+
+	.tech-with-experience {
+		width: 100%;
+		padding: 2em 1em 1em 1em;
+		background: $nightBlue-100;
+	}
+}
+
+.indv-study {
+	padding: 2em;
+	margin: 1em 0;
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0px 3px 15px 2px rgba(0, 0, 0, 0.21);
+	box-shadow: inset 0px 3px 15px 2px rgba(0, 0, 0, 0.21);
+}
+
+.tech-wraper {
+	padding-top: 1.5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1.5em;
+}
+
+.ind-technology {
+	width: 7rem;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5em;
+
+	img {
+		margin: 0 auto;
+		width: 110%;
+		border-radius: 100%;
+		margin-bottom: 0.5em;
+	}
+
+}

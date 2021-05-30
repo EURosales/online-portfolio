@@ -1,0 +1,22 @@
+@import 'home';
+@import 'about';
+@import 'contact';
+@import 'portfolio';
+
+* {
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5em;
+	color: set-text-color($nightBlue-100);
+	background: $nightBlue-100;
+	font-size: 1.2em;
+	font-family: $Qs;
+}

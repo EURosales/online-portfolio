@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500);
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700);
+@import url(https://fonts.googleapis.com/css2?family=Secular+One);
+
+$Qs: 'Quicksand', sans-serif;
+$So: 'Secular One', sans-serif;
+$Ws: 'Work Sans', sans-serif;
+
+//Home Page
+.home-hero-text {
+	font-size: 2em;
+	font-family: $Qs;
+}
+
+.highlight-md {
+	font-size: 4rem;
+	font-family: $So;
+	font-style: normal;
+	font-weight: bold;
+	color: $purple-100;
+}
+
+.short-philosophy {
+	font-family: $Qs;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+//Left Side (About Me page)
+
+.section-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	font-family: $Qs;
+	color: set-text-color(white);
+}
+
+.full-philosophy {
+	margin-top: 1em;
+	font-size: 1em;
+	font-family: $Qs;
+	text-align: justify;
+	padding: 0.5em 1em;
+}
+
+.hobies-list-container {
+	font-family: $Qs;
+
+	h4 {
+		margin-left: -1em;
+		margin-bottom: 0.5em;
+		font-size: 1.2em;
+	}
+	li {
+		font-size: 1em;
+		font-weight: 500;
+	}
+}
+
+//Rigth Side (About Me page)
+
+.name {
+	font-family: $So;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+.age-profession {
+	font-family: $Qs;
+	font-weight: 600;
+	font-size: 1.2em;
+	text-align: center;
+	padding-bottom: 2em;
+	border-bottom: 3px solid $purple-100;
+}
+
+.education-header {
+	font-size: 1.5em;
+	font-family: $Qs;
+	margin: 0.5em 0;
+}
+
+.education-name {
+	font-size: 1.25em;
+	font-family: $Qs;
+	margin-bottom: 0.1em;
+}
+
+.education-date {
+	font-size: 1em;
+	font-family: $Qs;
+	color: rgb(100, 100, 100);
+	margin-bottom: 0.3em;
+}
+
+.education-info {
+	font-size: 1em;
+	font-family: $Qs;
+}
+
+.ind-technology {
+	p {
+		font-size: 1.1em;
+		font-family: $Ws;
+
+	}
+}
+
+.tech-with-experience {
+	color: set-text-color($nightBlue-100);
+	.section-title {
+		color: set-text-color($nightBlue-100);
+	}
+}

@@ -1,0 +1,24 @@
+.portfolio {
+	padding: 1em;
+	.section-title {
+		padding-top: 0.5em;
+	}
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1em;
+}
+
+.projects-container > * {
+	flex-basis: 100%;
+	padding: 1.5em;
+}
+
+.project {
+	img {
+		width: 100%;
+	}
+}
