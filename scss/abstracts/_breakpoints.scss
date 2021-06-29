@@ -1,206 +1,236 @@
 @media (max-width: 1300px) {
+	.about-me-container {
+		.left-side {
+			flex-direction: row !important;
+			width: 100% !important;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
 
-    .about-me-container {
-        .left-side {
-            flex-direction: row !important;
-            width: 100% !important;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+			img {
+				width: 25% !important;
+			}
 
-            img{
-                width: 25% !important;
-            }
+			.full-philosophy-container {
+				width: 75% !important;
+			}
 
-            .full-philosophy-container{
-                width: 75% !important;
-            }
+			.hobies-list-container {
+				padding: 0 0.5em !important;
+				width: 33.33%;
+				text-align: center;
+				justify-content: flex-start;
 
-            .hobies-list-container{
-                padding: 0 0.5em !important;
-                width: 33.33%;
-                text-align: center;
-                justify-content: flex-start;
+				ul {
+					list-style: none;
+				}
+			}
+		}
 
-                 ul{
-                     list-style: none;
-                 }
-            }
-        }
-
-        .right-side {
-            padding: 1.5em !important;
-            border-radius: 60px 60px 0 0 !important;
-            margin-bottom: 0 !important;
-            width: 100% !important;
-        }
-    }
+		.right-side {
+			padding: 1.5em !important;
+			border-radius: 60px 60px 0 0 !important;
+			margin-bottom: 0 !important;
+			width: 100% !important;
+		}
+	}
 }
 
 @media (max-width: 1200px) {
-    .home-container {
+	.home-container {
+		article {
+			width: 50% !important;
+		}
 
-        article{
-            width: 50% !important;
-        }
-        
-        aside{
-            width: 50% !important;
-        }
-    }
+		aside {
+			width: 50% !important;
+		}
+	}
 }
 
 @media (max-width: 1030px) {
-    
+	.projects-container {
+		flex-wrap: wrap !important;
+	}
+	.projects-container > * {
+		flex-basis: 50% !important;
+		padding: 1.5em !important;
+	}
 }
 
 @media (max-width: 1000px) {
+	.home-container {
+		flex-direction: column !important;
+		justify-content: center;
+		align-items: center;
 
-    .home-container{
-        flex-direction: column !important;
-        justify-content: center;
-        align-items: center;
+		article {
+			width: 100% !important;
 
-        article{
-            width: 100% !important;
+			figure {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 60% !important;
+				}
+			}
+		}
 
-            figure{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                img{
-                    width: 60% !important;
-                }
-                
-            }
-        }
-        
-        aside{
-            width: 100% !important;
-            .home-hero-text{
-                text-align: center;
-                .highlight-md{
-                    font-size: 2.5rem;
-                }
-            }
-        }
-    }
+		aside {
+			width: 100% !important;
+			.home-hero-text {
+				text-align: center;
+				.highlight-md {
+					font-size: 2.5rem;
+				}
+			}
+		}
+	}
 
-    .left-side{
-        .hobies-list-container{
-                width: 50% !important;
-                
-            }
-    }
+	.left-side {
+		.hobies-list-container {
+			width: 50% !important;
+		}
+	}
 
+	form {
+		width: 90% !important;
+	}
 }
 
 @media (max-width: 840px) {
-    .home-container{
-        article{
-            figure{
-                img{
-                    width: 75% !important;
-                }
-                
-            }
-        }
-    }
+	.home-container {
+		article {
+			figure {
+				img {
+					width: 75% !important;
+				}
+			}
+		}
+	}
+
+	form {
+		width: 100% !important;
+	}
 }
 
 @media (max-width: 690px) {
-    .home-container{
-        article{
-            figure{
-                img{
-                    padding: 0 3em;
-                    width: 90% !important;
-                }
-                
-            }
-        }
-    }
+	.home-container {
+		article {
+			figure {
+				img {
+					padding: 0 3em;
+					width: 90% !important;
+				}
+			}
+		}
+	}
 
-    .about-me-container {
-        .left-side{
+	.about-me-container {
+		.left-side {
+			img {
+				width: 50% !important;
+			}
+			.full-philosophy-container {
+				width: 100% !important;
+			}
+			.hobies-list-container {
+				width: 100% !important;
+			}
+		}
+	}
 
-        img{
-                width: 50% !important;
-            }
-        .full-philosophy-container{
-                width: 100% !important;
-            }
-        .hobies-list-container{
-                width: 100% !important;
-            }
-    }
-    }
+	.form {
+		width: 100% !important;
+	}
 
-    
+	.main-wrapper {
+		padding: 0.5em 1.5em;
+		flex-direction: column !important;
+	}
 }
 
 @media (max-width: 520px) {
-    .home-container{
-        article{
-            figure{
-                img{
-                    padding: 0 2em;
-                    width: 100% !important;
-                }
-                
-            }
-        }
+	.home-container {
+		article {
+			figure {
+				img {
+					padding: 0 2em;
+					width: 100% !important;
+				}
+			}
+		}
 
-        aside{
-            p{
-                font-size: 1.2em;
-            }
-            .home-hero-text{
-                text-align: center;
-                .highlight-md{
-                    font-size: 2rem;
-                }
-                
-            }
-        }
-    }
+		aside {
+			p {
+				font-size: 1.2em;
+			}
 
-    .about-me-container {
-        .left-side{
+			.home-hero-text {
+				text-align: center;
+				.highlight-md {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
 
-        img{
-                width: 70% !important;
-            }
-        }
+	.about-me-container {
+		.left-side {
+			img {
+				width: 70% !important;
+			}
+		}
 
-        .right-side {
-            padding: 0.5em !important;
-            border-radius: 60px 60px 0 0 !important;
-            margin-bottom: 0 !important;
-            width: 100% !important;
+		.right-side {
+			padding: 0.5em !important;
+			border-radius: 60px 60px 0 0 !important;
+			margin-bottom: 0 !important;
+			width: 100% !important;
 
-            .name{
-                font-size: 2.2em;
-            }
-        }
-    }
+			.name {
+				font-size: 2.2em;
+			}
+		}
+	}
 
-    
+	.projects-container {
+		flex-wrap: wrap !important;
+	}
+	.projects-container > * {
+		flex-basis: 100% !important;
+		padding: 1.5em 0 !important;
+	}
+}
+
+@media (max-width: 470px) {
+	.main-wrapper {
+		padding: 0.5em 0.3em;
+	}
 }
 
 @media (max-width: 330px) {
-    .about-me-container {
-    .left-side{
-        padding: 1em 0 !important;
+	.about-me-container {
+		.left-side {
+			padding: 1em 0 !important;
 
-        img{
-                width: 90% !important;
-            }
+			img {
+				width: 90% !important;
+			}
 
-            .hobies-list-container{
-                padding: 0 !important;
-            }
-        }
-    }
+			.hobies-list-container {
+				padding: 0 !important;
+			}
+		}
+	}
+
+	.main-wrapper {
+		padding: 0.5em 0 !important;
+	}
+
+	.input-group {
+		padding: 0.8em 0 !important;
+	}
 }
