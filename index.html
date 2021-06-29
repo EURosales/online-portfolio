@@ -7,22 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.min.css">
         <!--Breakpoints-->
-        <link rel="stylesheet" href="style.css">
         <title>Document</title>
     </head>
 
     <body>
         <main>
             <header>
-                <nav>
-                    <ul class="un-list">
-                        <li class="nav-item"><a href="#home-container">Home</a></li>
-                        <li class="nav-item"><a href="#about-me-container">About Me</a></li>
-                        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                <nav id='menu'>
+                    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                    <ul>
+                        <li><a href='http://'>Home</a></li>
+                        <li><a href='http://'>About</a></li>
+                        <li><a href='http://'>Contact Us</a></li>
+                        <li><a href='http://'>portfolio</a></li>
                     </ul>
                 </nav>
-
             </header>
 
             <!--Home-->
@@ -37,14 +36,10 @@
                 </article>
                 <aside>
                     <div class="home-hero-text-container">
-                        <p class="home-hero-text"><i class="highlight-md">Software developer and designer</i><br>based
+                        <p class="home-hero-text"><i class="highlight-md">Web developer & designer</i><br>based
                             in San Salvador, El
                             Salvador.</p>
                     </div>
-                    <!-- <div class="philosophy-container">
-                        <p class="short-philosophy">Since I was young, I always had a big interest in the near future
-                            technologies.</p>
-                    </div> -->
                 </aside>
             </section>
 
