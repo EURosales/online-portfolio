@@ -1,3 +1,42 @@
+@media (max-width: 1300px) {
+
+    .about-me-container {
+        .left-side {
+            flex-direction: row !important;
+            width: 100% !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 25% !important;
+            }
+
+            .full-philosophy-container{
+                width: 75% !important;
+            }
+
+            .hobies-list-container{
+                padding: 0 0.5em !important;
+                width: 33.33%;
+                text-align: center;
+                justify-content: flex-start;
+
+                 ul{
+                     list-style: none;
+                 }
+            }
+        }
+
+        .right-side {
+            padding: 1.5em !important;
+            border-radius: 60px 60px 0 0 !important;
+            margin-bottom: 0 !important;
+            width: 100% !important;
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .home-container {
 
@@ -9,6 +48,10 @@
             width: 50% !important;
         }
     }
+}
+
+@media (max-width: 1030px) {
+    
 }
 
 @media (max-width: 1000px) {
@@ -44,6 +87,13 @@
         }
     }
 
+    .left-side{
+        .hobies-list-container{
+                width: 50% !important;
+                
+            }
+    }
+
 }
 
 @media (max-width: 840px) {
@@ -71,6 +121,23 @@
             }
         }
     }
+
+    .about-me-container {
+        .left-side{
+
+        img{
+                width: 50% !important;
+            }
+        .full-philosophy-container{
+                width: 100% !important;
+            }
+        .hobies-list-container{
+                width: 100% !important;
+            }
+    }
+    }
+
+    
 }
 
 @media (max-width: 520px) {
@@ -95,6 +162,44 @@
                     font-size: 2rem;
                 }
                 
+            }
+        }
+    }
+
+    .about-me-container {
+        .left-side{
+
+        img{
+                width: 70% !important;
+            }
+        }
+
+        .right-side {
+            padding: 0.5em !important;
+            border-radius: 60px 60px 0 0 !important;
+            margin-bottom: 0 !important;
+            width: 100% !important;
+
+            .name{
+                font-size: 2.2em;
+            }
+        }
+    }
+
+    
+}
+
+@media (max-width: 330px) {
+    .about-me-container {
+    .left-side{
+        padding: 1em 0 !important;
+
+        img{
+                width: 90% !important;
+            }
+
+            .hobies-list-container{
+                padding: 0 !important;
             }
         }
     }

@@ -29,6 +29,11 @@
 		.hobies-list-container {
 			margin-top: 1.5em;
 			padding: 0 2em;
+
+			&.email{
+				padding: 0 0.7em;
+			}
+			
 		}
 	}
 
