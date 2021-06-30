@@ -3,8 +3,11 @@
 @import 'contact';
 @import 'portfolio';
 
-* {
+html {
 	scroll-behavior: smooth;
+}
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -12,6 +15,7 @@
 
 footer {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 1.5em;
@@ -19,4 +23,20 @@ footer {
 	background: $nightBlue-100;
 	font-size: 1.2em;
 	font-family: $Qs;
+
+	a {
+		margin-top: 0.5em;
+		text-decoration: none;
+		padding: 0.5em 1.2em;
+		border-radius: 5px;
+		background: $beige-100;
+		font-family: $Qs;
+		color: rgb(66, 66, 66);
+		transition: 0.25s;
+
+		&:hover {
+			font-weight: 600;
+			transform: scale(1.05);
+		}
+	}
 }

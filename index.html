@@ -2,13 +2,15 @@
 <html lang="en">
 
     <head>
+        <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1053/1053367.png" type="image/x-icon">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#053742">
+        <meta name="theme-color" content="#6906db">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="css/main.min.css">
         <!--Breakpoints-->
-        <title>Document</title>
+        <title>Eduardo U. Rosales</title>
     </head>
 
     <body>
@@ -17,10 +19,10 @@
                 <nav id='menu'>
                     <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
                     <ul>
-                        <li><a href='http://'>Home</a></li>
-                        <li><a href='http://'>About</a></li>
-                        <li><a href='http://'>Contact Us</a></li>
-                        <li><a href='http://'>portfolio</a></li>
+                        <li><a href='#home-container'>Home</a></li>
+                        <li><a href='#about-me-container'>About</a></li>
+                        <li><a href='#portfolio'>Portfolio</a></li>
+                        <li><a href='#contact'>Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -218,9 +220,11 @@
                 <div class="projects-container">
                     <div class="project">
                         <img src="media/projects/tar.jpg" alt="">
-                        <h4 class="project-name">Project name</h4>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                            dolorum quo. Tenetur, beatae? Asperiores veritatis saepe.</p>
+                        <h4 class="project-name"><a target="_blank" class="qs"
+                                href="https://eurosales.github.io/CreditCardVerifier.github.io/">Credit/Debit card
+                                verifier</a></h4>
+                        <p class="project-description">Need to verify the veracity of a debit or credit card? try
+                            Credit/debir card verifier.</p>
                         <div class="used-technologies">
                             <span class="tech-pill"></span><span class="tech-pill"></span><span
                                 class="tech-pill"></span>
@@ -228,9 +232,10 @@
                     </div>
                     <div class="project">
                         <img src="media/projects/trivia.jpg" alt="">
-                        <h4 class="project-name">Project name</h4>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                            dolorum quo. Tenetur, beatae? Asperiores veritatis saepe.</p>
+                        <h4 class="project-name"><a target="_blank" class="qs"
+                                href="https://eurosales.github.io/trivia-app-euro/">Trivia App</a>
+                        </h4>
+                        <p class="project-description">A trivia mini-game about space and programming.</p>
                         <div class="used-technologies">
                             <span class="tech-pill"></span><span class="tech-pill"></span><span
                                 class="tech-pill"></span>
@@ -238,9 +243,11 @@
                     </div>
                     <div class="project">
                         <img src="media/projects/calo.jpg" alt="">
-                        <h4 class="project-name">Project name</h4>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                            dolorum quo. Tenetur, beatae? Asperiores veritatis saepe.</p>
+                        <h4 class="project-name"><a target="_blank" class="qs"
+                                href="https://eurosales.github.io/Calories-App/">Calories
+                                counter</a></h4>
+                        <p class="project-description">Do you ever wonder about how many calories eat in a day? this app
+                            can help.</p>
                         <div class="used-technologies">
                             <span class="tech-pill"></span><span class="tech-pill"></span><span
                                 class="tech-pill"></span>
@@ -248,9 +255,10 @@
                     </div>
                     <div class="project">
                         <img src="media/projects/fer.jpg" alt="">
-                        <h4 class="project-name">Project name</h4>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                            dolorum quo. Tenetur, beatae? Asperiores veritatis saepe.</p>
+                        <h4 class="project-name"><a target="_blank" class="qs"
+                                href="https://eurosales.github.io/Ferman-electronics.github.io/">Ferman Electronics</a>
+                        </h4>
+                        <p class="project-description">Website of a gadget shop.</p>
                         <div class="used-technologies">
                             <span class="tech-pill"></span><span class="tech-pill"></span><span
                                 class="tech-pill"></span>
@@ -267,12 +275,12 @@
                     <div class="main-wrapper">
                         <div class="wrapper">
                             <div class="input-group">
-                                <label for="name">Name (First and last)</label>
+                                <label for="name">Name (First and last):</label>
                                 <input type="text" name="name" id="name" required>
                                 <small></small>
                             </div>
                             <div class="input-group">
-                                <label for="email">E-mail</label>
+                                <label for="email">E-mail:</label>
                                 <input type="email" name="email" id="email" required>
                                 <small></small>
                             </div>
@@ -280,14 +288,16 @@
 
                         <div class="wrapper">
                             <div class="input-group">
-                                <label for="phone">Phone number</label>
+                                <label for="phone">Phone number:</label>
                                 <input type="tel" name="phone" id="phone" required>
                                 <small></small>
                             </div>
                             <div class="input-group">
-                                <label for="name">Select</label>
-                                <input type="text" name="name" id="name" required>
-                                <small></small>
+                                <label for="name">Select:</label>
+                                <select name="select">
+                                    <option value="value1" selected>Recruiter</option>
+                                    <option value="value2">Client</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -300,6 +310,7 @@
             <!--Footer-->
             <footer>
                 Made by Eduardo U. Rosales
+                <a href="#home-container">Go up <i class="fas fa-arrow-circle-up"></i></a>
             </footer>
         </main>
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

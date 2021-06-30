@@ -49,6 +49,22 @@
 							border-bottom: 3px solid $purple-100;
 						}
 					}
+
+					select {
+						outline: none;
+						font-family: $Qs;
+						font-size: 1em;
+						font-weight: 500;
+						border-radius: 6px;
+						padding: 0.4em 0.2em;
+						border: none;
+						border-bottom: 3px solid $nightBlue-100;
+						transition: 0.2s;
+
+						&:focus {
+							border-bottom: 3px solid $purple-100;
+						}
+					}
 				}
 			}
 		}

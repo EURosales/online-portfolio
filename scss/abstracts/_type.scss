@@ -7,7 +7,7 @@ $So: 'Secular One', sans-serif;
 $Ws: 'Work Sans', sans-serif;
 
 //Home Page
-#menu{
+#menu {
 	font-family: $Qs;
 }
 
@@ -107,7 +107,6 @@ $Ws: 'Work Sans', sans-serif;
 	p {
 		font-size: 1.1em;
 		font-family: $Ws;
-
 	}
 }
 
@@ -115,5 +114,16 @@ $Ws: 'Work Sans', sans-serif;
 	color: set-text-color($nightBlue-100);
 	.section-title {
 		color: set-text-color($nightBlue-100);
+	}
+}
+
+.qs {
+	font-family: $Qs !important;
+	text-decoration: none;
+}
+
+.project {
+	p {
+		font-family: $Ws;
 	}
 }
