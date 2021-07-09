@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/main.min.css">
         <!--Breakpoints-->
         <title>Eduardo U. Rosales</title>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
     </head>
 
     <body>
@@ -294,7 +296,7 @@
                 <div class="about-title-container">
                     <h3 class="section-title">Contacto</h3>
                 </div>
-                <form action="post">
+                <form id="contact-form" action="post">
                     <div class="main-wrapper">
                         <div class="wrapper">
                             <div class="input-group">
@@ -316,15 +318,16 @@
                                 <small></small>
                             </div>
                             <div class="input-group">
-                                <label for="name">Seleccionar:</label>
-                                <select name="select">
-                                    <option value="value1" selected>Reclutador</option>
-                                    <option value="value2">Cliente</option>
+                                <label for="role">Seleccionar:</label>
+                                <select id="role">
+                                    <option value="Reclutador (es)">Reclutador</option>
+                                    <option value="Cliente (es)" selected>Cliente</option>
                                 </select>
                             </div>
                         </div>
                     </div>
-
+                    <div class="toast ">Su información de contacto fué guardada, me pondré en contacto con usted pronto.
+                    </div>
                     <div class="submit-btn-container">
                         <input type="submit" value="Contacto">
                         <a href="mailto:eduardo_rosales26@outlook.com">contacto por correo*</a>

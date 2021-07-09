@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/main.min.css">
         <!--Breakpoints-->
         <title>Eduardo U. Rosales</title>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
     </head>
 
     <body>
@@ -158,8 +160,8 @@
                     <!--resume -->
 
                     <div class="cv-container">
-                        <a class="cv-link" href="media/docs/Eduardo Ulises Rosales López - Resume (EN)v2.pdf" download><i
-                                class="fas fa-file-alt"></i> Resume (EN)</a>
+                        <a class="cv-link" href="media/docs/Eduardo Ulises Rosales López - Resume (EN)v2.pdf"
+                            download><i class="fas fa-file-alt"></i> Resume (EN)</a>
                         <a class="cv-link" href="media/docs/Eduardo Ulises Rosales López - Resume (ES).pdf" download><i
                                 class="fas fa-file-alt"></i> Resume (ES)</a>
                     </div>
@@ -296,7 +298,7 @@
                 <div class="about-title-container">
                     <h3 class="section-title">Get in touch</h3>
                 </div>
-                <form action="post">
+                <form id="contact-form">
                     <div class="main-wrapper">
                         <div class="wrapper">
                             <div class="input-group">
@@ -318,15 +320,16 @@
                                 <small></small>
                             </div>
                             <div class="input-group">
-                                <label for="name">Select:</label>
-                                <select name="select">
-                                    <option value="value1" selected>Recruiter</option>
-                                    <option value="value2">Client</option>
+                                <label for="role">Select:</label>
+                                <select id="role" required>
+                                    <option value="Reclutador (en)">Recruiter</option>
+                                    <option value="Cliente (en)" selected>Client</option>
                                 </select>
                             </div>
                         </div>
                     </div>
-
+                    <div class="toast ">Your contact information it's been saved. I will get in touch ASAP.
+                    </div>
                     <div class="submit-btn-container">
                         <input type="submit" value="Contact">
                         <a href="mailto:eduardo_rosales26@outlook.com">contact by email*</a>
