@@ -87,7 +87,9 @@
 .cv-container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+	flex-direction: row;
+	padding-top: 1em !important;
 
 	.cv-link {
 		padding: 0.8em 1.3em;
